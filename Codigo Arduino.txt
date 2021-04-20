@@ -1,0 +1,45 @@
+int Tinaco100 = A0; 
+int Bombear = A1;  
+int Cisterna = A2; 
+int valor;    
+
+void setup() {
+    pinMode(Tinaco100, OUTPUT);
+    pinMode(Bombear, OUTPUT);
+    pinMode(Cisterna, OUTPUT);
+    Serial.begin(9600);
+    }
+
+void loop() {
+  digitalWrite(Tinaco100, HIGH);
+  digitalWrite(Bombear, HIGH);
+  digitalWrite(Cisterna, HIGH);
+  
+  Serial.println("valor recibido");
+  Serial.println(valor);
+
+  if(valor = 'a'){
+    digitalWrite(Tinaco100, LOW);
+  }
+  
+  if(valor = 'b'){
+    digitalWrite(Bombear, LOW);  
+  }
+  
+  if(valor = 'c'){
+    digitalWrite(Cisterna, LOW);
+  }
+
+ if(valor = 'd'){
+    digitalWrite(Tinaco100, HIGH);
+  }
+  
+  if(valor = 'e'){
+    digitalWrite(Bombear, HIGH);  
+  }
+  
+  if(valor = 'f'){
+    digitalWrite(Cisterna, HIGH);
+  }
+delay(500);                        
+}
